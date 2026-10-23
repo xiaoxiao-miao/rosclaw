@@ -104,3 +104,57 @@ node_modules/
 /config.yaml
 .rosclaw-index/
 _build_stamp.json
+
+# Tool caches / compiled artifacts
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+coverage.xml
+*.o
+*.a
+*.cubin
+*.fatbin
+
+# pixi environments (keep pixi.toml + pixi.lock tracked)
+.pixi/
+
+# Local IDE/agent MCP config (machine-specific absolute paths)
+/.cursor/mcp.json
+
+# Model checkpoints / weights (test fixtures under tests/ stay tracked)
+/checkpoints/
+/ckpt/
+/weights/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+
+# Large data / recordings (data/knowledge_assets/ stays tracked)
+/datasets/
+/data/raw/
+/data/cache/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.bag
+*.db3
+*.mcap
+*.parquet
+*.mp4
+*.avi
+
+# Experiment / run outputs
+/outputs/
+/output/
+/results/
+/logs/
+/runs/
+/wandb/
+/mlruns/
+lightning_logs/
+/tmp/
